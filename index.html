@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emoji</title>
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="prova.css">
+</head>
+<body>
+<div class="rate">
+	<div class="emoji">😑</div>
+	<input type="range" min="0" max="4" step="1">
+</div>
+<script type="text/javascript">
+
+	var emojis = ['😠','😦','😑','😀','😍'];
+
+$("input").mousemove(function(){
+	var i = $(this).val();
+	$(".emoji").html(emojis[i]);
+});
+
+</script>
+
+</body>
+</html>
